@@ -1,9 +1,0 @@
-for i in $(seq 100)
-> do
-> mkdir DDM$i
-> cd DDM$i
-> name=$(printf "time_till_now" $i)
-> touch ${name}.txt; 
-> echo -e 'nanoseconds since 1970-01-01 00:00:00 UTC:\n' $(date"+%s.%N") > ${name}.txt
-> cd ..
-> done
